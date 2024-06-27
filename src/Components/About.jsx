@@ -8,7 +8,7 @@ const About = () => {
         <article>
           <SectionTitle text="who i am?" />
           <p className="text-slate-600 mt-8 leading-loose">
-            My name is Firss Sharief. I am a professional and enthusiastic programmer
+            My name is Firas Sharief. I am a professional and enthusiastic programmer
             in my daily life. I am a quick learner with a self-learning
             attitude. I love to learn and explore new technologies and i'm
             passionate about problem-solving. I love almost all the stacks of
