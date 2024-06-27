@@ -2,7 +2,7 @@ import { FaGithubSquare } from "react-icons/fa";
 import { TbWorldWww } from "react-icons/tb";
 const ProjectsCard = ({ url, img, github, title, text }) => {
   return (
-    <article className="bg-white rounded-lg shadow-md hover:shadow-lg duration-300">
+    <a href={url} className="bg-white rounded-lg shadow-md hover:shadow-lg duration-300">
       <img
         src={img}
         alt={title}
@@ -15,12 +15,9 @@ const ProjectsCard = ({ url, img, github, title, text }) => {
           <a href={url}>
             <TbWorldWww className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
           </a>
-          <a href={url}>
-            <FaGithubSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
-          </a>
         </div>
       </div>
-    </article>
+    </a>
   );
 };
 export default ProjectsCard;

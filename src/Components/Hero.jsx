@@ -1,5 +1,12 @@
 import heroImg from "../assets/hero.svg";
-import { FaGithubSquare, FaLinkedin, FaTwitterSquare } from "react-icons/fa";
+
+import {
+  FaGithubSquare,
+  FaLinkedin,
+  FaInstagramSquare,
+  FaDownload,
+} from "react-icons/fa";
+import { RiContactsLine } from "react-icons/ri";
 const Hero = () => {
   return (
     <div className="bg-emerald-100 py-24 ">
@@ -15,19 +22,27 @@ const Hero = () => {
             turning ideas into interactive reality
           </p>
           <div className="flex gap-x-4 mt-4">
-            <a href="#">
+            <a href="https://github.com/f1rx5">
               <FaGithubSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/in/firassharief/">
               <FaLinkedin className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
             </a>
-            <a href="#">
-              <FaTwitterSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
+            <a href="https://www.instagram.com/_f1rx5_/">
+              <FaInstagramSquare className="h-8 w-8 text-slate-500 hover:text-black duration-300" />
+            </a>
+          </div>
+          <div className="flex gap-x-4 mt-4">
+            <a
+              href="https://drive.google.com/file/d/1htX_dDdJ3a97r1MunpPGWpRBVO6Fl9DP/view"
+              className="bg-emerald-600 hover:bg-emerald-700 transition duration-300 text-white font-bold py-2 px-4 rounded "
+            >
+              Get resume
             </a>
           </div>
         </article>
         <article className="hidden md:block">
-            <img src={heroImg} className="h-80 lg:h-96"/>
+          <img src={heroImg} className="h-80 lg:h-96" />
         </article>
       </div>
     </div>
